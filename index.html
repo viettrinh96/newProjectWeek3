@@ -16,64 +16,110 @@
   </head>
 
   <body>
-    <section id="navbar">
-        <div id="nav1">
-          <!-- logo -->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Weather_Channel_logo_2005-present.svg/1200px-The_Weather_Channel_logo_2005-present.svg.png" alt="logo" width="60px"/>
-          <!-- Search -->
-          <ul class="navbar-nav">
-            <form class="form-inline" action="/somepage">
-               <input class="form-control mr-sm-2" type="text" id="searchSth" placeholder="Search City or Zip Code">
-               <button class="btn btn-success" type="submit">Search</button>
-            </form>
-         </ul>
-         <div id="selectNav1">
-          <!-- Change region -->
-          <select id="changeRegion">Change Region</select>
-          <select id="changeUnit"> Change Unit</select>
-        </div>
-                  <!-- Menubar -->
-                  <select id="menu"></select>
+    <header class="header">
+      <div class="header-large-screen">
+        <div class="main-menu-header">
+          <div class="main-menu-header-wrapper">
+            <div class="header-logo">
+              <img class="logo" src="./asset/twc_logo-495x400.png" alt="twc_logo-495x400">
+              <div class="company">
+                <img src="./asset/an-ibm.png" alt="company" class="company-img">
+              </div>
+            </div>
+            <div class="header-search">
+              <input class="search-city-or-zip-code" placeholder="Search City or Zip Code"/>
+            </div>
+            <div class="header-language">
+              <div class="header-language-content">
+                <span class="language">US</span>
+                <span class="space">|</span>
+                <span class="temperature-types">°F</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="nav2">
-
+      <div class="priview-location">
+        <div class="content-location">Để nguyên cho anh call api chỗ này nhé</div>
       </div>
-    </div>
-    </section>
+      <div class="options-time"></div>
+    </header>
 
-    <section id="thisPlace">
-      <div class="container"></div>
-    </section>
+    <main class="main-content">
+      <div class="daybreak-large-screen">
+        <div class="region-main">
+          <div class="current-condition">
+            <div class="region-main__location">Thu Cúc, Phú Thọ, Vietnam Weather</div>
+            <div class="region-main__time">As of 6:43 am ICT</div>
+            <div class="region-main__temperature">74°</div>
+            <div class="region-main__status">Cloudy</div>
+            <div class="region-main__more">18% chance of rain through 7 am</div>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Today's Forecast for Thu Cúc, Phú Thọ, Vietnam</div>
+            <div class="weather-table">
+              <div class="morning column">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="afternoon column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="evening column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="overnight column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+            </div>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Hourly Forecast</div>
+            <div class="weather-table">
+              <div class="morning column">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="afternoon column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="evening column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="overnight column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="overnight column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="region-sidebar">
+          
+        </div>
+      </div>
+    </main>
 
-    <section id="radar">
-      <div class="container"></div>
-    </section>
+    <footer>
 
-    <section id="topStory">
-      <div class="container"></div>
-    </section>
-
-    <section id="detailWeatherThisPlace">
-      <div class="container"></div>
-    </section>
-
-    <section id="hourlyForecast">
-      <div class="container"></div>
-    </section>
-
-    <section id="dailyForecast">
-      <div class="container"></div>
-    </section>
-
-    <section id="photoGallery">
-      <div class="container"></div>
-    </section>
-
-    <section id="recommended">
-      <div class="container"></div>
-    </section>
-
-    <footer></footer>
+    </footer>
   </body>
 </html>

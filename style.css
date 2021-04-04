@@ -1,55 +1,216 @@
-:root {
-  color: #2b2b2b;
-  color: var(--textDefault);
-  --textBrand: #1b4de4;
-  --textDefault: #2b2b2b;
-  --textDark: #000;
-  --textMedium: #2b2b2b;
-  --textLight: #6f7585;
-  --textOverlay: #fff;
-  --textDisabled: #43454e;
-  --borderDefault: #dedede;
-  --borderLight: #f0f0f0;
-  --backgroundDefault: #fff;
-  --backgroundCard: #fff;
-  --backgroundBrand: #039;
-  --backgroundActive: #1b4de4;
-  --backgroundBrandAccent: #1b4de4;
-  --backgroundInverse: #000;
-  --backgroundOverlay: #fff;
-  --backgroundModalOverlay: rgba(0, 0, 0, 0.8);
-  --backgroundTableBody: #f1f1f1;
-  --buttonBackground: #fff;
-  --buttonText: #1b4de4;
-  --primaryButtonBackground: #1b4de4;
-  --primaryButtonText: #fff;
-  --secondaryButtonBackground: #fff;
-  --secondaryButtonText: #1b4de4;
+*{
+  box-sizing: border-box;
+  font-size: 14px;
 }
-body {
-  margin: 0 0;
-  padding: 0 0;
-  font-family: "Poppins", sans-serif;
-  background-image: url("113.jpg");
+
+html{
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
-footer {
-  height: 60vh;
-  background-color: white;
-  z-index: 1;
+
+body{
+  margin: 0;
+  background-color: #6e3f98;
+  background-image: linear-gradient(#a88cc2,#e7cdc1,#fcf9f7);  
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#nav1 {
-  height: 80px;
-  width: 1500px;
+
+.main-menu-header{
+  background-color: #6e3f98;
+  position: relative;
+  width: 100%;
+}
+
+.main-menu-header-wrapper{
+  padding: 11px 11px 11px 6px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1280px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 82px;
+  justify-content: space-between;
+}
+
+.header-logo{
+  display: flex;
   align-items: center;
 }
-#searchSth {
-  border-radius: 20px;
-  width: 260px;
-  text-align: center;
+
+.logo{
+  cursor: pointer;
+  width: 100px;
+  height: 85px;
 }
-.navbar-toggler {
-  color: white;
+
+.company-img{
+  width: 130px;
+  height: 23px;
+}
+
+.header-search{
+  width: 380px;
+  height: 38px;
+}
+
+.search-city-or-zip-code{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 20px;
+  background: hsla(0,0%,100%,.2);
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-city-or-zip-code::placeholder{
+  color: #fff;
+  font-weight: 550;
+
+}
+
+.header-language-content{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.language,
+.space,
+.temperature-types{
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.priview-location{
+  height: 40px;
+  background: hsla(0,0%,100%,.2);
+  display: flex;
+  align-items: center;
+}
+
+.content-location{
+  width: 1280px;
+  margin-left: 60px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.options-time{
+  height: 40px;
+  background: rgba(0,0,0,.4);
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.daybreak-large-screen{
+  margin-top: 12px;
+  width: 1162px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.region-main{
+  width: 788px;
+  margin-left: 12px;
+}
+
+.region-sidebar{
+  margin-right: 12px;
+  width: 338px;
+}
+
+.current-condition{
+  margin-bottom: 12px;
+  width: 100%;
+  padding: 20px 33px 22px 27px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#6e3f98),to(#a37697));
+  color: #fff;
+}
+
+.region-main__location{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.region-main__time{
+  font-size: 18px;
+  opacity: 0.65;
+}
+
+.region-main__temperature{
+  font-size: 96px;
+  font-weight: 600;
+  margin: -10px 0;
+}
+
+.region-main__status{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.region-main__more{
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.today-weather-card{
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+}
+
+.title-card{
+  color: black;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.weather-table{
+  margin-bottom: 16px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-time,
+.humidity-time{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.temperature-time{
+  font-size: 36px;
+  font-weight: 400;
+  color: rgb(27, 77, 228);
 }
