@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Weather</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -40,12 +36,27 @@
         </div>
       </div>
       <div class="priview-location">
-        <div class="content-location">Để nguyên cho anh call api chỗ này nhé</div>
+        <div class="content-location">Call API</div>
       </div>
-      <div class="options-time"></div>
+      <div class="options-time">
+        <div class="today">Today
+        </div>
+        <div class="hourly">Hourly
+        </div>
+        <div class="10day">10 Day
+        </div>
+        <div class="weekend">Weekend
+        </div>
+        <div class="monthly">Monthly
+        </div>
+        <div class="Radar">Radar
+        </div>
+      </div>
     </header>
 
+
     <main class="main-content">
+      <div class="container">
       <div class="daybreak-large-screen">
         <div class="region-main">
           <div class="current-condition">
@@ -55,6 +66,7 @@
             <div class="region-main__status">Cloudy</div>
             <div class="region-main__more">18% chance of rain through 7 am</div>
           </div>
+          <section class="section-1">
           <div class="today-weather-card">
             <div class="title-card">Today's Forecast for Thu Cúc, Phú Thọ, Vietnam</div>
             <div class="weather-table">
@@ -79,7 +91,14 @@
                 <div class="humidity-time">17%</div>
               </div>
             </div>
+            <button class="next-time">Next Hour</button>
           </div>
+          <div class="air-quality">
+            <div class="title-card">Air Quality Index</div>
+            <div>data</div>
+            <button class="next-time">See Details</button>
+          </div>
+        </section>
           <div class="today-weather-card">
             <div class="title-card">Hourly Forecast</div>
             <div class="weather-table">
@@ -109,6 +128,105 @@
                 <div class="humidity-time">17%</div>
               </div>
             </div>
+            <button class="next-time">Next 48 Hours</button>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Weather Today in Thu Cúc, Phú Thọ, Vietnam</div>
+            <h1>24°</h1>
+
+            <div class="column-weather">
+            <div class="column-1">
+              <div class="detail-weather">
+                <div class="row-1">
+                  <p>High / Low</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-2">
+                  <p>Humidity</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-3">
+                  <p>Pressure</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-4">
+                  <p>Visibility</p>
+                  <p> data </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-2">
+              <div class="detail-weather">
+                <div class="row-1">
+                  <p>Wind</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-2">
+                  <p>Dew Point</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-3">
+                  <p>UV Index</p>
+                  <p> data </p>
+                </div>
+                <hr>
+                <div class="row-4">
+                  <p>Moon Phase</p>
+                  <p> data</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Daily Forecast</div>
+            <div class="weather-table">
+              <div class="morning column">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="afternoon column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="evening column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="overnight column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+              <div class="overnight column border-between">
+                <div class="status-time">Morning</div>
+                <div class="temperature-time">77°</div>
+                <div class="humidity-time">17%</div>
+              </div>
+            </div>
+            <button class="next-time">Next 10 days</button>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Photo Gallery</div>
+            <div class="photo-gallery">
+              <div class="photo"></div>
+            </div>
+            <button class="next-time">See more</button>
+          </div>
+          <div class="today-weather-card">
+            <div class="title-card">Recommened</div>
+            <div class="recommended">
+              <div class="media"></div>
+            </div>
+            <button class="next-time">See more</button>
           </div>
         </div>
         </div>
@@ -119,7 +237,39 @@
     </main>
 
     <footer>
-
+      <div class="container">
+      <div class="row1">
+        <div class="contact"><b>Connect With Us
+        </b>
+        <img src="fb.png" width="30px">
+        <img src="ig.png" width="30px">
+        <img src="twitter.png" width="30px">
+        </div>
+        <div class="logo"><img src="logo.png" alt="logo" width="50px"></div>
+      </div>
+      <div class="row2">
+        <div class="content-row2">Feedback</div>
+        <div class="content-row2">Careers</div>
+        <div class="content-row2">Press Room</div>
+        <div class="content-row2">TV</div>
+      </div>
+      <div class="row3">
+        <div class="content-row3">Term of Use</div>
+        <span>|</span>
+        <div class="content-row3">Privacy Policy</div>
+        <span>|</span>
+        <div class="content-row3">Ad Choices</div>
+        <span>|</span>
+        <div class="content-row3">Data Vendors</div>
+      </div>
+      <div class="row4">
+        <div class="content-row4">We recognize our responsibility to use data and technology for good. Take control of your data.</div>
+      </div>
+      <div class="row5">
+        <div class="content-row5">© Copyright TWC Product and Technology LLC 2014, 2021</div>
+      </div>
+      </div>
     </footer>
+  </div>
   </body>
 </html>
